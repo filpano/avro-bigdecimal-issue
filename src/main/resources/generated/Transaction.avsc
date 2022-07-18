@@ -1,0 +1,20 @@
+{
+  "type" : "record",
+  "name" : "Transaction",
+  "namespace" : "org.example.model",
+  "fields" : [ {
+    "name" : "amount",
+    "type" : [ "null", {
+      "type" : "string",
+      "java-class" : "java.math.BigDecimal"
+    } ],
+    "default" : null
+  }, {
+    "name" : "transactionId",
+    "type" : [ "null", {
+      "type" : "string",
+      "logicalType" : "uuid"
+    } ],
+    "default" : null
+  } ]
+}
